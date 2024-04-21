@@ -1,0 +1,65 @@
+// Scss Document
+
+@font-face
+{
+	font-family: Be-Vietnam-Pro-thin;
+	src: url("./fonts/BeVietnamPro-Thin.ttf");
+}
+@font-face
+{
+	font-family: Be-Vietnam-Pro-r;
+	src: url("../fonts/BeVietnamPro-Light.ttf");
+}
+@font-face
+{
+	font-family: Be-Vietnam-Pro-Md;
+	src: url("../fonts/BeVietnamPro-Medium.ttf");
+}
+@font-face
+{
+	font-family: Be-Vietnam-Pro-Sb;
+	src: url("../fonts/BeVietnamPro-SemiBold.ttf");
+}
+@font-face
+{
+	font-family: Be-Vietnam-Pro-B;
+	src: url("../fonts/BeVietnamPro-Bold.ttf");
+}
+@font-face
+{
+	font-family: Be-Vietnam-Pro-thin-I;
+	src: url("../fonts/BeVietnamPro-ThinItalic.ttf")
+}
+@font-face
+{
+	font-family: Be-Vietnam-Pro-Light;
+	src: url("../fonts/BeVietnamPro-Light.ttf")
+}
+
+$font-thin: Be-Vietnam-Pro-thin;
+$font-light: Be-Vietnam-Pro-Light;
+$font-regular: Be-Vietnam-Pro-r;
+$font-medium: Be-Vietnam-Pro-Md;
+$font-SemiBold: Be-Vietnam-Pro-Sb;
+$font-Bold: Be-Vietnam-Pro-B;
+$font-thin-I: Be-Vietnam-Pro-thin-I;
+$color-primary: #9A8DE9;
+$color-black: #000;
+$color-text: #333333;
+$color-title: #1C1C1C;
+$Price-M: #F62B22;
+$color-text-M2: #3D3D3D;
+$Secondary-M: #676767;
+$color-white:#fff;
+$color-light: #FAFAFA;
+$color-dark: #555555;
+$color-gray: #999999;
+$color-gray-2: #838383;
+$color-border: #C1C1C1;
+$Border-M: #E1E1E1;
+
+
+$primary-with-opacity: rgba(154, 141, 233, 0.2);
+$gradient-linear-iconCoin-border: linear-gradient(to bottom right, #FFE68E, #F9AB34);
+$gradient-linear-iconCoin: linear-gradient(to bottom , #FFE68E, #F9AB34);
+

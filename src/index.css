@@ -1,0 +1,20 @@
+@import 'style/pages/_all.scss';
+@import 'style/pages/_theme.scss';
+
+
+body,p,h1,h2,h3,h4,h5,h6
+{
+	margin: 0;
+	padding: 0;
+
+}
+a
+{
+	text-decoration: none;
+}
+ol,ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

@@ -1,55 +1,56 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import MapPage from "./pages/MapPage";
-import SalePage from "./pages/SalePage";
-import VoucherPage from "./pages/VoucherPage";
-import EarnCoinsPage from "./pages/EarnCoinsPage";
-import BlogPage from "./pages/BlogPage";
-import BlogDetailPage from "./pages/BlogDetailPage";
-import MainLayout from "./layout/MainLayout";
-import Booking from "./pages/Booking";
-import ViewBooking from "./pages/ViewBooking";
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import MapPage from './pages/MapPage'
+import SalePage from './pages/SalePage'
+import VoucherPage from './pages/VoucherPage'
+import EarnCoinsPage from './pages/EarnCoinsPage'
+import BlogPage from './pages/BlogPage'
+import BlogDetailPage from './pages/BlogDetailPage'
+import MainLayout from './layout/MainLayout'
+import Booking from './pages/Booking'
+import ViewBooking from './pages/ViewBooking'
+import './style/style.scss'
 
 const renderUserRouter = () => {
   const userRouters = [
     {
-      path: "",
+      path: '',
       element: <Home />,
     },
     {
-      path: "/lich-hen",
+      path: '/lich-hen',
       element: <Booking />,
     },
     {
-      path: "/lich-hen/xem-lai-lich-hen",
+      path: '/lich-hen/xem-lai-lich-hen',
       element: <ViewBooking />,
     },
     {
-      path: "/map",
+      path: '/map',
       element: <MapPage />,
     },
 
     {
-      path: "/Dang-giam-gia",
+      path: '/Dang-giam-gia',
       element: <SalePage />,
     },
     {
-      path: "/Voucher",
+      path: '/Voucher',
       element: <VoucherPage />,
     },
     {
-      path: "/kiem-xu",
+      path: '/kiem-xu',
       element: <EarnCoinsPage />,
     },
     {
-      path: "/cam-nam-lam-dep",
+      path: '/cam-nam-lam-dep',
       element: <BlogPage />,
     },
     {
-      path: "/cam-nam-lam-dep/chi-tiet",
+      path: '/cam-nam-lam-dep/chi-tiet',
       element: <BlogDetailPage />,
     },
-  ];
+  ]
 
   return (
     <MainLayout>
@@ -59,11 +60,11 @@ const renderUserRouter = () => {
         ))}
       </Routes>
     </MainLayout>
-  );
-};
+  )
+}
 
 const App = () => {
-  return renderUserRouter();
-};
+  return renderUserRouter()
+}
 
-export default App;
+export default App

@@ -1,19 +1,19 @@
-import { memo, useState } from "react";
-import iconWifi from "../../assets/Iconset/iOS-wlan-white.svg";
-import Battery from "../../assets/Iconset/iOS-battery-white.svg";
-import iconNetwork from "../../assets/Iconset/iOS-network-white.svg";
-import iconChat from "../../assets/Iconly/Light/Chat.svg";
-import iconHome from "../../assets/Iconly/Light/Home.svg";
-import iconNotification from "../../assets/Iconly/Light/Notification.svg";
-import iconProfile from "../../assets/Iconly/Light/Profile.svg";
-import iconCalendar from "../../assets/Iconly/Bold/Calendar.svg";
-import Img1 from "../../assets/LichHen/Img1.svg";
-import "react-multi-carousel/lib/styles.css";
-import Carousel from "react-multi-carousel";
-import "react-tabs/style/react-tabs.css";
-import "../../style/style.scss";
+import React, { memo, useState } from 'react'
+import iconWifi from '../../assets/Iconset/iOS-wlan-white.svg'
+import Battery from '../../assets/Iconset/iOS-battery-white.svg'
+import iconNetwork from '../../assets/Iconset/iOS-network-white.svg'
+import iconChat from '../../assets/Iconly/Light/Chat.svg'
+import iconHome from '../../assets/Iconly/Light/Home.svg'
+import iconNotification from '../../assets/Iconly/Light/Notification.svg'
+import iconProfile from '../../assets/Iconly/Light/Profile.svg'
+import iconCalendar from '../../assets/Iconly/Bold/Calendar.svg'
+import Img1 from '../../assets/LichHen/Img1.svg'
+import 'react-multi-carousel/lib/styles.css'
+import Carousel from 'react-multi-carousel'
+import 'react-tabs/style/react-tabs.css'
+import '../../style/style.scss'
 
-const Booking = () => {
+const Booking: React.FC = () => {
   const responsiveMenu = {
     superLarge: {
       breakpoint: { max: 3000, min: 464 },
@@ -23,37 +23,37 @@ const Booking = () => {
       breakpoint: { max: 464, min: 0 },
       items: 3.5,
     },
-  };
+  }
   const responsiveMenuBottom = {
     superLarge: {
       breakpoint: { max: 3000, min: 0 },
       items: 5,
     },
-  };
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  }
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const handleItemClick = (index: number) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
+    setActiveIndex(index === activeIndex ? null : index)
+  }
 
   const sliderMenuItems = [
     {
-      name: "Lịch hẹn",
-      path: "",
+      name: 'Lịch hẹn',
+      path: '',
     },
     {
-      name: "Sắp tới",
-      path: "",
+      name: 'Sắp tới',
+      path: '',
     },
     {
-      name: "Đã hoàn thành",
-      path: "",
+      name: 'Đã hoàn thành',
+      path: '',
     },
     {
-      name: "Đã hủy",
-      path: "",
+      name: 'Đã hủy',
+      path: '',
     },
-  ];
+  ]
 
   return (
     <div id="Booking">
@@ -100,7 +100,7 @@ const Booking = () => {
                 <div
                   key={index}
                   className={`lichHen-slider-item ${
-                    activeIndex === index ? "active" : ""
+                    activeIndex === index ? 'active' : ''
                   }`}
                   onClick={() => handleItemClick(index)}
                 >
@@ -110,6 +110,9 @@ const Booking = () => {
             </Carousel>
           </div>
         </div>
+      </div>
+      <div className="container">
+        <div className="calendar-container"></div>
       </div>
       <div className="lichHen">
         <div className="container">
@@ -137,7 +140,6 @@ const Booking = () => {
           </div>
         </div>
       </div>
-
       <div className="banner-dgg-container"></div>
       <div className="Footer">
         <div className="container">
@@ -145,8 +147,8 @@ const Booking = () => {
             <div className="icon-bottom">
               <a href="/">
                 <div className="img">
-                  {" "}
-                  <img src={iconHome} alt="" />{" "}
+                  {' '}
+                  <img src={iconHome} alt="" />{' '}
                 </div>
                 <p>Trang chủ</p>
               </a>
@@ -155,7 +157,7 @@ const Booking = () => {
             <div className="icon-bottom">
               <a href="#">
                 <div className="img">
-                  <img src={iconNotification} alt="" />{" "}
+                  <img src={iconNotification} alt="" />{' '}
                 </div>
                 <p>Thông báo</p>
               </a>
@@ -173,7 +175,7 @@ const Booking = () => {
             <div className="icon-bottom">
               <a href="#">
                 <div className="img">
-                  <img src={iconChat} alt="" />{" "}
+                  <img src={iconChat} alt="" />{' '}
                 </div>
                 <p>Tin nhắn </p>
               </a>
@@ -182,7 +184,7 @@ const Booking = () => {
             <div className="icon-bottom">
               <a href="#">
                 <div className="img">
-                  <img src={iconProfile} alt="" />{" "}
+                  <img src={iconProfile} alt="" />{' '}
                 </div>
                 <p>User</p>
               </a>
@@ -191,6 +193,6 @@ const Booking = () => {
         </div>
       </div>
     </div>
-  );
-};
-export default memo(Booking);
+  )
+}
+export default memo(Booking)

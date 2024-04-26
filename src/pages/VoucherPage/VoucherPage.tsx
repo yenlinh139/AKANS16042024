@@ -1,53 +1,53 @@
-import { memo } from "react";
-import iconWifi from "../../assets/Iconset/iOS-wlan-white.svg";
-import Battery from "../../assets/Iconset/iOS-battery-white.svg";
-import iconNetwork from "../../assets/Iconset/iOS-network-white.svg";
-import iconLeft from "../../assets/Arrow-Left.svg";
-import VoucherSan from "../../assets/Voucher/VoucherSan.svg";
-import VoucherKhac from "../../assets/Voucher/VoucherKhac.svg";
-import iconVoucherStore from "../../assets/Voucher/VoucherStore.svg";
-import iconVoucherAluza from "../../assets/Voucher/VoucherAluza.svg";
-import Img1 from "../../assets/Voucher/img1.svg";
+import { memo } from 'react'
+import iconWifi from '../../assets/Iconset/iOS-wlan-white.svg'
+import Battery from '../../assets/Iconset/iOS-battery-white.svg'
+import iconNetwork from '../../assets/Iconset/iOS-network-white.svg'
+import iconLeft from '../../assets/Arrow-Left.svg'
+import VoucherSan from '../../assets/Voucher/VoucherSan.svg'
+import VoucherKhac from '../../assets/Voucher/VoucherKhac.svg'
+import iconVoucherStore from '../../assets/Voucher/VoucherStore.svg'
+import iconVoucherAluza from '../../assets/Voucher/VoucherAluza.svg'
+import Img1 from '../../assets/Voucher/img1.svg'
 
 const VoucherPage: React.FC = () => {
   const VoucherAluza = [
     {
       img: iconVoucherAluza,
-      name: "Giảm 50% trang điểm cô dâu",
-      HSD: "24-4-2023",
+      name: 'Giảm 50% trang điểm cô dâu',
+      HSD: '24-4-2023',
     },
     {
       img: iconVoucherAluza,
-      name: "Giảm 50% trang điểm cô dâu",
-      HSD: "24-4-2023",
+      name: 'Giảm 50% trang điểm cô dâu',
+      HSD: '24-4-2023',
     },
-  ];
+  ]
   const VoucherStore = [
     {
       img: Img1,
-      store: "Nhi Phúc Store",
-      name: "Giảm 50% trang điểm cô dâu",
-      HSD: "24-4-2023",
+      store: 'Nhi Phúc Store',
+      name: 'Giảm 50% trang điểm cô dâu',
+      HSD: '24-4-2023',
     },
     {
       img: Img1,
-      store: "Nhi Phúc Store",
-      name: "Giảm 50% trang điểm cô dâu",
-      HSD: "24-4-2023",
+      store: 'Nhi Phúc Store',
+      name: 'Giảm 50% trang điểm cô dâu',
+      HSD: '24-4-2023',
     },
     {
       img: Img1,
-      store: "Nhi Phúc Store",
-      name: "Giảm 50% trang điểm cô dâu",
-      HSD: "24-4-2023",
+      store: 'Nhi Phúc Store',
+      name: 'Giảm 50% trang điểm cô dâu',
+      HSD: '24-4-2023',
     },
     {
       img: Img1,
-      store: "Nhi Phúc Store",
-      name: "Giảm 50% trang điểm cô dâu",
-      HSD: "24-4-2023",
+      store: 'Nhi Phúc Store',
+      name: 'Giảm 50% trang điểm cô dâu',
+      HSD: '24-4-2023',
     },
-  ];
+  ]
 
   return (
     <>
@@ -93,31 +93,33 @@ const VoucherPage: React.FC = () => {
           </div>
           <div className="clear"></div>
         </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-4 ">
-              <div className="width ">
-                <img src={VoucherSan} alt="" />
-                <p>
-                  Voucher <br /> sàn
-                </p>
+        <div className="headerVC">
+          <div className="container">
+            <div className="row ">
+              <div className="col-4 ">
+                <div className="width ">
+                  <img src={VoucherSan} alt="" />
+                  <p>
+                    Voucher <br /> sàn
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="col-4 ">
-              <div className="width ">
-                <img src={iconVoucherStore} alt="" />
-                <p>
-                  Voucher <br /> cửa hàng
-                </p>
+              <div className="col-4 ">
+                <div className="width ">
+                  <img src={iconVoucherStore} alt="" />
+                  <p>
+                    Voucher <br /> cửa hàng
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="col-4 ">
-              <div className="width ">
-                <img src={VoucherKhac} alt="" />
-                <p>
-                  Voucher <br /> khác
-                </p>
+              <div className="col-4 ">
+                <div className="width ">
+                  <img src={VoucherKhac} alt="" />
+                  <p>
+                    Voucher <br /> khác
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -175,6 +177,6 @@ const VoucherPage: React.FC = () => {
         </div>
       </div>
     </>
-  );
-};
-export default memo(VoucherPage);
+  )
+}
+export default memo(VoucherPage)

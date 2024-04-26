@@ -1,10 +1,10 @@
-import { memo } from "react";
-import iconWifi from "../../assets/Iconset/iOS-wlan-white.svg";
-import Battery from "../../assets/Iconset/iOS-battery-white.svg";
-import iconNetwork from "../../assets/Iconset/iOS-network-white.svg";
-import iconLeft from "../../assets/Arrow-Left.svg";
-import iconChat from "../../assets/LichHen/chat.svg";
-import "react-multi-carousel/lib/styles.css";
+import { memo } from 'react'
+import iconWifi from '../../assets/Iconset/iOS-wlan-white.svg'
+import Battery from '../../assets/Iconset/iOS-battery-white.svg'
+import iconNetwork from '../../assets/Iconset/iOS-network-white.svg'
+import iconLeft from '../../assets/Arrow-Left.svg'
+import iconChat from '../../assets/LichHen/chat.svg'
+import 'react-multi-carousel/lib/styles.css'
 
 const ViewBooking = () => {
   return (
@@ -118,6 +118,6 @@ const ViewBooking = () => {
         </div>
       </div>
     </>
-  );
-};
-export default memo(ViewBooking);
+  )
+}
+export default memo(ViewBooking)

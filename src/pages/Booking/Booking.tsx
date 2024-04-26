@@ -111,9 +111,7 @@ const Booking: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="calendar-container"></div>
-      </div>
+      <div className="container"></div>
       <div className="lichHen">
         <div className="container">
           <h5>Lịch hẹn của tôi</h5>

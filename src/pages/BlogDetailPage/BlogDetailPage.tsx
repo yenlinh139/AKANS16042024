@@ -1,12 +1,12 @@
-import { memo } from "react";
-import iconWifi from "../../assets/Iconset/iOS-wlan-white.svg";
-import Battery from "../../assets/Iconset/iOS-battery-white.svg";
-import iconNetwork from "../../assets/Iconset/iOS-network-white.svg";
-import iconLeft from "../../assets/Arrow-Left.svg";
-import iconShare from "../../assets/Blog/Share.svg";
-import iconShow from "../../assets/Blog/Iconly/Light/Show.svg";
-import iconCalendar from "../../assets/Blog/Iconly/Light-Outline/Calendar.svg";
-import Img from "../../assets/Blog/img2.svg";
+import { memo } from 'react'
+import iconWifi from '../../assets/Iconset/iOS-wlan-white.svg'
+import Battery from '../../assets/Iconset/iOS-battery-white.svg'
+import iconNetwork from '../../assets/Iconset/iOS-network-white.svg'
+import iconLeft from '../../assets/Arrow-Left.svg'
+import iconShare from '../../assets/Blog/Share.svg'
+import iconShow from '../../assets/Blog/Iconly/Light/Show.svg'
+import iconCalendar from '../../assets/Blog/Iconly/Light-Outline/Calendar.svg'
+import Img from '../../assets/Blog/img2.svg'
 
 const BlogDetailPage = () => {
   return (
@@ -43,7 +43,7 @@ const BlogDetailPage = () => {
           <div className="container">
             <div className="title">
               <div className="iconLeft">
-                <a href="/">
+                <a href="/cam-nam-lam-dep">
                   <img src={iconLeft} alt="" />
                 </a>
               </div>
@@ -120,6 +120,6 @@ const BlogDetailPage = () => {
         </div>
       </div>
     </>
-  );
-};
-export default memo(BlogDetailPage);
+  )
+}
+export default memo(BlogDetailPage)

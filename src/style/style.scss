@@ -11,7 +11,6 @@
         height: 110px;
         
         .TopHome {
-            
             position: absolute;
             top: 12px;
             left: 0;
@@ -100,7 +99,7 @@
 
 #Footer {
     position: fixed;
-        background-color: #fff;
+        
         bottom: 0px;
         left: 0;
         right: 0;
@@ -127,6 +126,7 @@
     overflow-x: auto;
     z-index: 30;
     width: 100%;
+    background-color: #fff;
     .react-multi-carousel-item {
         margin: 0 5px;
     }
@@ -195,18 +195,19 @@
                     top: 15px;
                     left: 26px;
                     height: 20px;
-                    display: flex;
                     align-items: center;
+                   
                 }
                 input {
-                    padding-left: 45px;
+                    padding-left: 55px;
                     border-radius: 25px;
-                    width: 90%;
+                    width: 95%;
                     border: 1px solid $color-border;
                 
                 }
             }
             .chat {
+                position: relative;
                 height: 50px;
                 width: 50px;
                 background-color: $color-white;
@@ -214,8 +215,10 @@
                 
             
                 .icon {
+                    position: absolute;
+                    top: 12px;
+                    left: 12px;
                     height: 26px;
-                    padding: 12px;
                 }
                 
             }
@@ -226,7 +229,7 @@
             width: 100%;
             z-index: 10;
             .navLocation {
-                height: 68px;
+                
                 border-radius: 15px;
                 box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.11);
                 background-color: $color-white;
@@ -252,7 +255,7 @@
                 .navLeft {
                     display: flex;
                     justify-content: end;
-                    margin-top: 19px;
+                    margin-top: 18px;
                     p {line-height: 30px; padding-left: 5px; font-family: $font-medium;}
                     
                 }
@@ -273,13 +276,18 @@
             overflow: hidden;
     
             .Menu-slider-img {
+                position: relative;
                 width: 80px;
                 height: 80px;
                 border-radius: 20px;
                 background-color: #FAF9FF;
                 margin-left: auto;
                 margin-right: auto;
-                img {padding: 15px; width: 50px;}
+                img {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px; 
+                    width: 50px;}
             }
     
             p {
@@ -478,12 +486,12 @@
     .Footer {
         position: absolute;
         background-color: #fff;
-        bottom: 13px;
+        bottom: 0px;
         left: 0;
         right: 0;
         z-index: 2000;
         .icon-bottom {
-            margin: 15px;
+            margin: 15px 15px 18px;
             text-align: center;
             border-radius: 20px;
             padding-top: 10px;
@@ -522,6 +530,7 @@
     }
 }
 #Map {
+    background-color: #fff;
     .searchHome {
         margin-top: 20px;
         position: relative;
@@ -557,13 +566,13 @@
                 height: 100%;
                 width: 100%;
             }
-        .clear {height: 40px; width: 100%;}
+        
     }
     .bottomCN {
         position: fixed;
-        bottom: 15px;
+        bottom: 0px;
         left: 0;
-        padding: 0 0 10px;
+        padding: 0 0 40px;
         width: 100%;
         height: 300px; /* Chiều cao cố định */
         background-color: #ffffff; /* Màu nền của bottomCN */
@@ -577,6 +586,7 @@
             width: 100%;
             display: flex;
             justify-content: center; 
+            z-index: 1000;
             
             button {
                 margin-top: 12px;
@@ -606,7 +616,9 @@
           .Menu-slider-item {
             display: flex;
             padding-top: 20px;
-           
+            padding-bottom: 20px;
+            
+    
             .Menu-slider-img {
                 .img {
                     width: 60px;
@@ -641,7 +653,7 @@
             }
         }
           .line {
-            margin: 20px 0 10px;
+            margin: 10px 0 10px;
             width: 100%;
             height: 1px;
             background-color: #E1E1E1;
@@ -667,7 +679,7 @@
             width: 100%;
             z-index: 10;
             .ngay {
-                height: 160px;
+                
                 border-radius: 16px;
                 background-color: $color-white;
                 box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.10);
@@ -808,18 +820,24 @@
             
         }          
     }
+    .banner-dgg-container {
+        width: 100%;
+        height: 100px;
+    }
     .Footer {
         max-width: 1080px;
         margin: 0 auto;
         position: fixed;
         background-color: #fff;
         width: 100%;
-        bottom: 13px;
+        bottom: 0px;
         left: 0;
         right: 0;
         z-index: 2000;
         border-radius: 24px 24px 0 0;
         box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.12);
+        padding-bottom: 15px;
+        padding-top: 5px;
         .icon-bottom {
             margin: 5px;
             text-align: center;
@@ -831,20 +849,22 @@
                 font-size: 20px;
                 justify-content: center;
                 .img {
+                    position: relative;
                     height: 50px;
                     width: 50px;
                     border-radius: 25px;
                     margin: 0 auto;
                     background-color: #F5F5F5;
-                    img {padding: 13px; height: 24px;}
+                    img {position: absolute; left: 13px; top: 13px; height: 24px;}
                 }
                 .img2 {
+                    position: relative;
                     height: 50px;
                     width: 50px;
                     border-radius: 25px;
                     margin: 0 auto;
                     background-color: $color-primary;
-                    img {padding: 13px; height: 24px;}
+                    img {position: absolute; left: 13px; top: 13px; height: 24px;}
                 }
                 
                 p {font-family: $font-regular; font-size: 16px; padding-top: 5px;}
@@ -854,6 +874,7 @@
                 
             }
         }
+        
     }
     .lichHen {
         margin-top: 16px;
@@ -911,17 +932,41 @@
             }
         }
     }
-    .calendar-container {
-        margin: 0 auto;
-        text-align: center;
-        
-      }
-      
+    .section-container {
+        background-color: #fff;
+        padding-top: 20px;
+        .zaui-calendar-header-title {
+            color: $color-title;
+            font-family: $font-Bold;
+            font-size: 14px;
+        }
+        .zaui-calendar-panel-content {
+            th {
+                color: $color-text-M2;
+            }
+        }
+        .zaui-calendar-panel-cell-in-view {
+            color: $color-title;
+        }
+        .zaui-btn-tertiary {color: $color-title;}
+        .zaui-calendar-panel-cell-in-view.zaui-calendar-panel-cell-selected:not(.zaui-calendar-panel-cell-disabled) .zaui-calendar-cell-inner {
+            background: $color-primary;
+            color: #fff;
+            border-radius: 50%;
+           
+        }
+        .zaui-calendar-panel-cell-in-view.zaui-calendar-panel-cell-today:not(.zaui-calendar-panel-cell-disabled) .zaui-calendar-cell-inner::before {
+            border-radius: 50%;
+            border: 1px solid $color-primary;
+            color: #fff;
+        }
+    }
       
     
 }
 #ViewBooking {
     background-color: #F5F5F5;
+   
     .header {
         margin: 12px 0;
         text-align: center;
@@ -944,7 +989,7 @@
     .infoLichHen {
         background-color: #fff;
         border-radius: 12px;
-        padding: 12px 12px 28px;
+        padding: 30px;
         box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.12);
         .title {
             font-size: 16px;
@@ -986,7 +1031,7 @@
         }
     }
     .HuyDL {
-        margin: 16px 12px 50px;
+        padding: 16px 12px 50px;
         button {
             border: 1px solid $color-primary;
             background-color: #fff;
@@ -1010,11 +1055,13 @@
         bottom: 20px;
         width: 48px;
         height: 48px;
+        z-index: 3000;
         border-radius: 100px;
         background-color: $color-primary;
-        z-index: 3000;
         cursor: pointer;
-        img {height: 20px; padding: 14px 12px;}
+        img {position: absolute; top: 14px; left: 12px;height: 20px;}
+        
+        
     }
 }
 #SalePage {
@@ -1172,18 +1219,23 @@
     }
 }
 #VoucherPage {
-    .width {
-        width: 85px; 
-        text-align: center;
-        margin: 24px auto;
-        img {width: 48px;}
-        p {
-            font-size: 14px;
-            padding-top: 7px;
+    background-color: #F5F5F5;
+    .headerVC {
+        background-color: #fff;
+        .width {
+            width: 85px; 
+            text-align: center;
+            margin: 24px auto;
+            
+            img {width: 48px;}
+            p {
+                font-size: 14px;
+                padding-top: 7px;
+            }
         }
     }
+    
     .VoucherDetail {
-        background-color: #F5F5F5;
         padding: 24px;
         h5 {
             font-size: 20px;
@@ -1472,7 +1524,6 @@
         }
         .Footer {
             width: 100%;
-            bottom: 13px;
             border-radius: 12px 12px 0 0;
             .icon-bottom {
                 border-radius: 20px;
@@ -1540,35 +1591,7 @@
                 }
             }
         }
-        .calendar-container {
-            .react-calendar {
-                padding: 12px 24px;
-                font-size: 15px;
-              
-              &__navigation {
-                // Định dạng nút điều hướng
-                button, span {
-                  font-size: 14px;
-                  padding: 5px 10px;
-                }
-               
-              }
-          
-              &__month-view {
-                
-          
-                &__weekdays {
-                  
-                  padding: 5px 0;
-          
-                  &__weekday {
-                    padding: 5px;
-                  }
-                  
-                }
-              }
-            }
-          }
+        
     }
     #EarnCoinsPage {
         .BannerTop {
@@ -1577,7 +1600,6 @@
             .diemDanh {
                 top: 12px;
                 .ngay {
-                    height: 117px;
                     border-radius: 16px;
                     background-color: $color-white;
                     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.10);
@@ -1700,7 +1722,9 @@
                     margin-right: auto;
                     border-radius: 10px;
                     background-color: #FAF9FF;
-                    img {padding: 8px; width: 32px;}
+                    img { width: 32px;top: 8px;
+                        right: 8px;}
+                    
                 }
         
                 p {
@@ -1765,7 +1789,8 @@
                     border-radius: 20px;
                     .icon {
                         height: 20px;
-                        padding: 10px;
+                        left: 10px;
+                        top: 10px;
                     }
                     
                 }
@@ -1779,10 +1804,10 @@
                 z-index: 10;
                 .navLocation {
                     margin: 0 12px;
-                    height: 66px;
+                    
                     border-radius: 15px;
                     background-color: $color-white;
-                    padding: 5px 40px;
+                    padding: 6px 40px 10px;
                     color: $color-text-M2;
                     font-size: 16px;
                     z-index: 20;
@@ -1938,7 +1963,6 @@
             .line-bottom {
                 width: 134px;
                 height: 3px;
-                background-color: #D3D3D3;
                 border-radius: 2px;
             }
         }

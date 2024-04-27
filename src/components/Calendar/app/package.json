@@ -1,5 +1,5 @@
 {
-  "name": "ylui/app",
+  "name": "zaui/app",
   "private": true,
   "sideEffects": [
     "*.less",

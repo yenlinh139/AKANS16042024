@@ -11,6 +11,8 @@ import Img1 from '../../assets/LichHen/Img1.svg'
 import 'react-multi-carousel/lib/styles.css'
 import Carousel from 'react-multi-carousel'
 import 'react-tabs/style/react-tabs.css'
+import '../../components/Calendar/zaui.min.css'
+import { Page, Calendar } from '../../components/Calendar'
 import '../../style/style.scss'
 
 const Booking: React.FC = () => {
@@ -111,7 +113,11 @@ const Booking: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="container"></div>
+      <div className="container">
+        <Page className="section-container">
+          <Calendar startOfWeek={1} />
+        </Page>
+      </div>
       <div className="lichHen">
         <div className="container">
           <h5>Lịch hẹn của tôi</h5>

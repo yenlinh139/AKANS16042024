@@ -941,8 +941,13 @@
             font-size: 14px;
         }
         .zaui-calendar-panel-content {
+            thead {
+                border-bottom: 1px solid #E1E1E1;
+                
+            }
             th {
                 color: $color-text-M2;
+                padding-bottom: 10px;
             }
         }
         .zaui-calendar-panel-cell-in-view {

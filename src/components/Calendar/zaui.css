@@ -386,6 +386,8 @@
     opacity: 0;
   }
 }
+
+
 .zaui-mask {
   width: 100%;
   height: 100%;
@@ -4270,6 +4272,7 @@ body[zaui-theme="dark"] .zaui-image-viewer-nav-btn:disabled {
   background: var(--zaui-light-calendar-bg-color, #ffffff);
   border-radius: 8px;
 }
+
 .zaui-calendar-full .zaui-calendar-panel {
   display: block;
   width: 100%;
@@ -4416,3 +4419,34 @@ body[zaui-theme="dark"] .zaui-calendar-full .zaui-calendar-cell-inner {
 body[zaui-theme="dark"] .zaui-calendar-full .zaui-calendar-cell-inner-content {
   color: var(--zaui-dark-calendar-cell-text-color, rgba(185, 189, 193, 0.85));
 }
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  
+
+}
+
+.yellow-dot {
+  background-color: #EEB020;
+}
+
+.green-dot {
+  background-color: #1ECFCD;
+}
+
+.pink-dot {
+  background-color: #EE4392;
+}
+
+.black-dot {
+  background-color: #3D3D3D;
+}
+.zaui-calendar-panel-status {
+  color: #3D3D3D;
+  margin-bottom: 12px;
+}
+.zaui-calendar-panel-status .status-dot 
+{margin-right: 5px}

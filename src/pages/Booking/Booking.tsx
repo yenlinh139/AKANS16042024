@@ -11,7 +11,7 @@ import Img1 from '../../assets/LichHen/Img1.svg'
 import 'react-multi-carousel/lib/styles.css'
 import Carousel from 'react-multi-carousel'
 import 'react-tabs/style/react-tabs.css'
-import '../../components/Calendar/zaui.min.css'
+import '../../components/Calendar/zaui.css'
 import { Page, Calendar } from '../../components/Calendar'
 import '../../style/style.scss'
 

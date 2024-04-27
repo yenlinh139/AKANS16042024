@@ -4,6 +4,36 @@ import { getPrefixCls } from '../../utils/class'
 import { CellType } from './props-type'
 import CalendarCell from './CalendarCell'
 import { CalendarContext } from './context'
+var getStatusFromDate = (date) => {
+  var statusMap = {
+    dcVang: 'Đang chờ',
+    StXanh: 'Sắp',
+    HTHong: 'Hoàn thành',
+    DDen: 'Hủy',
+    // Add other mappings if needed
+  }
+  if (statusMap === 'Đang chờ') {
+    return React.createElement('span', {
+      className: 'status-dot yellow-dot',
+    })
+  }
+  if (statusMap === 'Sắp') {
+    return React.createElement('span', {
+      className: 'status-dot green-dot',
+    })
+  }
+  if (statusMap === 'Hoàn thành') {
+    return React.createElement('span', {
+      className: 'status-dot pink-dot',
+    })
+  }
+  if (statusMap === 'Hủy') {
+    return React.createElement('span', {
+      className: 'status-dot black-dot',
+    })
+  } else return null
+}
+
 var CalendarPanel = function CalendarPanel(props) {
   var header = props.header,
     body = props.body,
@@ -22,11 +52,62 @@ var CalendarPanel = function CalendarPanel(props) {
       date1.getDate() === date2.getDate()
     )
   }
+
   return /*#__PURE__*/ React.createElement(
     'div',
     {
       className: classes,
     },
+    /*#__PURE__*/ React.createElement(
+      'div',
+      { className: prefixCls + '-status' },
+      /*#__PURE__*/ React.createElement(
+        'div',
+        {
+          className: 'row',
+        },
+        /*#__PURE__*/ React.createElement(
+          'div',
+          {
+            className: 'col-3',
+          },
+          /*#__PURE__*/ React.createElement('span', {
+            className: 'status-dot yellow-dot',
+          }),
+          'Đang chờ',
+        ),
+        /*#__PURE__*/ React.createElement(
+          'div',
+          {
+            className: 'col-3',
+          },
+          React.createElement('span', {
+            className: 'status-dot green-dot',
+          }),
+          'Sắp',
+        ),
+        /*#__PURE__*/ React.createElement(
+          'div',
+          {
+            className: 'col-3',
+          },
+          React.createElement('span', {
+            className: 'status-dot pink-dot',
+          }),
+          'Hoàn thành',
+        ),
+        /*#__PURE__*/ React.createElement(
+          'div',
+          {
+            className: 'col-3',
+          },
+          React.createElement('span', {
+            className: 'status-dot black-dot',
+          }),
+          'Hủy',
+        ),
+      ),
+    ),
     /*#__PURE__*/ React.createElement(
       'div',
       {
@@ -138,4 +219,5 @@ var CalendarPanel = function CalendarPanel(props) {
     ),
   )
 }
+
 export default CalendarPanel

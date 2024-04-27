@@ -2115,7 +2115,7 @@ body[zaui-theme="dark"] .zaui-tabs-tabbar-active-line {
 .zaui-page {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  min-height: 100vh;
+  max-height: 100vh;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -4421,8 +4421,8 @@ body[zaui-theme="dark"] .zaui-calendar-full .zaui-calendar-cell-inner-content {
 }
 
 .status-dot {
-  width: 3.5px;
-  height: 3.5px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   display: inline-block;
 
@@ -4456,3 +4456,10 @@ body[zaui-theme="dark"] .zaui-calendar-full .zaui-calendar-cell-inner-content {
 {margin-right: 5px; 
   width: 8px;
   height: 8px;}
+.status-UI {
+  display: flex;
+  justify-content: center;
+}
+.status-UI .status-dot {
+  margin: 2px ;
+}

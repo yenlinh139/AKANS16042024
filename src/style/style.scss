@@ -99,7 +99,7 @@
 
 #Footer {
     position: fixed;
-        
+ 
         bottom: 0px;
         left: 0;
         right: 0;
@@ -836,8 +836,7 @@
         z-index: 2000;
         border-radius: 24px 24px 0 0;
         box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.12);
-        padding-bottom: 15px;
-        padding-top: 5px;
+        
         .icon-bottom {
             margin: 5px;
             text-align: center;
@@ -935,6 +934,7 @@
     .section-container {
         background-color: #fff;
         padding-top: 20px;
+        padding-bottom: 20px;
         .zaui-calendar-header-title {
             color: $color-title;
             font-family: $font-Bold;

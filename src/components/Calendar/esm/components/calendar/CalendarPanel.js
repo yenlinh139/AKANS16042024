@@ -142,6 +142,38 @@ var CalendarPanel = function CalendarPanel(props) {
                   }
                   fullCellContent = fullCellRender(cell.value, _cellInfo)
                 }
+                // Tính toán số lượng span cần hiển thị dựa trên dữ liệu của cell
+                var numberOfSpans = 0
+                if (cell.value.getDate() === 11) {
+                  numberOfSpans = 1
+                } else if (cell.value.getDate() === 15) {
+                  numberOfSpans = 2
+                } else if (cell.value.getDate() === 17) {
+                  numberOfSpans = 1
+                } else if (cell.value.getDate() === 16) {
+                  numberOfSpans = 1
+                } else if (cell.value.getDate() === 27) {
+                  numberOfSpans = 3
+                } else if (cell.value.getDate() === 17) {
+                  numberOfSpans = 1
+                }
+
+                // Tạo các span tương ứng với số lượng đã tính toán
+                var spanElements = []
+                for (var i = 0; i < numberOfSpans; i++) {
+                  spanElements.push(
+                    /*#__PURE__*/ React.createElement('span', {
+                      key: i,
+                      className: classNames('status-dot', {
+                        'green-dot': i === 0,
+                        'yellow-dot': i === 1,
+                        'pink-dot': i === 2,
+                        'black-dot': i === 3,
+                      }),
+                    }),
+                  )
+                }
+
                 return /*#__PURE__*/ React.createElement(
                   'td',
                   {
@@ -181,9 +213,11 @@ var CalendarPanel = function CalendarPanel(props) {
                     role: 'presentation',
                   },
                   fullCellContent,
-                  /*#__PURE__*/ React.createElement('span', {
-                    className: 'status-dot',
-                  }),
+                  /*#__PURE__*/ React.createElement(
+                    'div',
+                    { className: 'status-UI' },
+                    spanElements,
+                  ),
                 )
               }),
             )

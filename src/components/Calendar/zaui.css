@@ -4421,12 +4421,16 @@ body[zaui-theme="dark"] .zaui-calendar-full .zaui-calendar-cell-inner-content {
 }
 
 .status-dot {
-  width: 8px;
-  height: 8px;
+  width: 3.5px;
+  height: 3.5px;
   border-radius: 50%;
   display: inline-block;
-  
 
+}
+.zaui-calendar-panel-cell .status-dot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .yellow-dot {
@@ -4449,4 +4453,6 @@ body[zaui-theme="dark"] .zaui-calendar-full .zaui-calendar-cell-inner-content {
   margin-bottom: 12px;
 }
 .zaui-calendar-panel-status .status-dot 
-{margin-right: 5px}
+{margin-right: 5px; 
+  width: 8px;
+  height: 8px;}

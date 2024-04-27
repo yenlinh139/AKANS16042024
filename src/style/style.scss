@@ -1528,7 +1528,6 @@
             }          
         }
         .Footer {
-            width: 100%;
             border-radius: 12px 12px 0 0;
             .icon-bottom {
                 border-radius: 20px;
@@ -1540,18 +1539,23 @@
                         height: 40px;
                         width: 40px;
                         border-radius: 20px;
-                        img {padding: 10px; height: 20px;}
+                        img { left: 10px; top: 10px; height: 20px;}
                     }
                     .img2 {
                         height: 40px;
                         width: 40px;
                         border-radius: 20px;
-                        img {padding: 10px; height: 20px;}
+                        img { left: 10px; top: 10px; height: 20px;}
                     }
                     
-                    p { font-size: 10px; }
+                    p {font-size: 10px; padding-top: 1px;}
+                }
+                &:hover {
+                    background-color: $primary-with-opacity;
+                    
                 }
             }
+            
         }
         .lichHen {
             margin-top: 8px;

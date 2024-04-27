@@ -4,35 +4,6 @@ import { getPrefixCls } from '../../utils/class'
 import { CellType } from './props-type'
 import CalendarCell from './CalendarCell'
 import { CalendarContext } from './context'
-var getStatusFromDate = (date) => {
-  var statusMap = {
-    dcVang: 'Đang chờ',
-    StXanh: 'Sắp',
-    HTHong: 'Hoàn thành',
-    DDen: 'Hủy',
-    // Add other mappings if needed
-  }
-  if (statusMap === 'Đang chờ') {
-    return React.createElement('span', {
-      className: 'status-dot yellow-dot',
-    })
-  }
-  if (statusMap === 'Sắp') {
-    return React.createElement('span', {
-      className: 'status-dot green-dot',
-    })
-  }
-  if (statusMap === 'Hoàn thành') {
-    return React.createElement('span', {
-      className: 'status-dot pink-dot',
-    })
-  }
-  if (statusMap === 'Hủy') {
-    return React.createElement('span', {
-      className: 'status-dot black-dot',
-    })
-  } else return null
-}
 
 var CalendarPanel = function CalendarPanel(props) {
   var header = props.header,
@@ -210,6 +181,9 @@ var CalendarPanel = function CalendarPanel(props) {
                     role: 'presentation',
                   },
                   fullCellContent,
+                  /*#__PURE__*/ React.createElement('span', {
+                    className: 'status-dot',
+                  }),
                 )
               }),
             )

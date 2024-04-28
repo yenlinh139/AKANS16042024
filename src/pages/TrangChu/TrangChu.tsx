@@ -61,7 +61,7 @@ interface FeaturedProducts {
   [key: string]: Category
 }
 
-const HomePage = () => {
+const TrangChu = () => {
   const responsiveMenu = {
     superLarge: {
       breakpoint: { max: 3000, min: 464 },
@@ -469,4 +469,4 @@ const HomePage = () => {
     </div>
   )
 }
-export default memo(HomePage)
+export default memo(TrangChu)

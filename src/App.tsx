@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import TrangChu from './pages/TrangChu'
+import HomePage from './pages/HomePage'
 import MapPage from './pages/MapPage'
 import SalePage from './pages/SalePage'
 import VoucherPage from './pages/VoucherPage'
@@ -15,7 +15,7 @@ const renderUserRouter = () => {
   const userRouters = [
     {
       path: '',
-      element: <TrangChu />,
+      element: <HomePage />,
     },
     {
       path: '/lich-hen',

@@ -10,44 +10,43 @@
  * Released on: April 15, 2024
  */
 
-import App from "./app";
-import Button from "./button";
-import Icon from "./icon";
-import List from "./list";
-import Input from "./input";
-import Avatar from "./avatar";
-import Modal from "./modal";
-import Sheet from "./sheet";
-import Tabs from "./tabs";
-import Page from "./page";
+const App = React.lazy(() => import("./app"));
+const Button = React.lazy(() => import("./button"));
+const Icon = React.lazy(() => import("./icon"));
+const List = React.lazy(() => import("./list"));
+const Input = React.lazy(() => import("./input"));
+const Avatar = React.lazy(() => import("./avatar"));
+const Modal = React.lazy(() => import("./modal"));
+const Sheet = React.lazy(() => import("./sheet"));
+const Tabs = React.lazy(() => import("./tabs"));
+const Page = React.lazy(() => import("./page"));
+const Text = React.lazy(() => import("./text"));
+const Box = React.lazy(() => import("./box"));
+const Checkbox = React.lazy(() => import("./checkbox"));
+const Radio = React.lazy(() => import("./radio"));
+const Switch = React.lazy(() => import("./switch"));
+const Progress = React.lazy(() => import("./progress"));
+const Spinner = React.lazy(() => import("./spinner"));
+const Slider = React.lazy(() => import("./slider"));
+const Header = React.lazy(() => import("./header"));
+const Select = React.lazy(() => import("./select"));
+const SnackbarProvider = React.lazy(() => import("./snackbar-provider"));
+const Picker = React.lazy(() => import("./picker"));
+const DatePicker = React.lazy(() => import("./date-picker"));
+const BottomNavigation = React.lazy(() => import("./bottom-navigation"));
+const Swiper = React.lazy(() => import("./swiper"));
+const ImageViewer = React.lazy(() => import("./image-viewer"));
+const Stack = React.lazy(() => import("./stack"));
+const ZBox = React.lazy(() => import("./zbox"));
+const Center = React.lazy(() => import("./center"));
+const Cluster = React.lazy(() => import("./cluster"));
+const Grid = React.lazy(() => import("./grid"));
+const Calendar = React.lazy(() => import("./calendar"));
+const useNavigate = React.lazy(() => import("./useNavigate"));
+const useSnackbar = React.lazy(() => import("./useSnackbar"));
 
 import ZMPRouter, { AnimationRoutes } from "./router";
-import Text from "./text";
-import Box from "./box";
-import Checkbox from "./checkbox";
-import Radio from "./radio";
-import Switch from "./switch";
-import Progress from "./progress";
-import Spinner from "./spinner";
-import Slider from "./slider";
-import Header from "./header";
-import Select from "./select";
-import SnackbarProvider from "./snackbar-provider";
-import Picker from "./picker";
-import DatePicker from "./date-picker";
-import BottomNavigation from "./bottom-navigation";
-import Swiper from "./swiper";
-import ImageViewer from "./image-viewer";
-import Stack from "./stack";
-import ZBox from "./zbox";
-import Center from "./center";
-import Cluster from "./cluster";
-import Grid from "./grid";
-import Calendar from "./calendar";
-
 import { useTheme } from "./useTheme";
-import useNavigate from "./useNavigate";
-import useSnackbar from "./useSnackbar";
 
 export {
     App,

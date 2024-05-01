@@ -4,8 +4,8 @@ import Battery from '../../assets/Iconset/iOS-battery-white.svg'
 import iconNetwork from '../../assets/Iconset/iOS-network-white.svg'
 import iconLeft from '../../assets/Arrow-Left.svg'
 import iconShare from '../../assets/Blog/Share.svg'
-import iconShow from '../../assets/Blog/Iconly/Light/Show.svg'
-import iconCalendar from '../../assets/Blog/Iconly/Light-Outline/Calendar.svg'
+import iconShow from '../../assets/Iconly/Light/Show.svg'
+import iconCalendar from '../../assets/Iconly/Light-Outline/Calendar.svg'
 import Img from '../../assets/Blog/img2.svg'
 
 const BlogDetailPage = () => {

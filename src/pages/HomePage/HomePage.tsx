@@ -1,6 +1,6 @@
 import { memo } from 'react'
 import iconSearch from '../../assets/Iconly/Light/Search.svg'
-import iconChat from '../../assets/HomePage/Iconly/Bold/Chat.svg'
+import iconChat from '../../assets/Iconly/Bold/Chat.svg'
 import iconShare from '../../assets/HomePage/ri_share-fill.svg'
 import iconWifi from '../../assets/Iconset/iOS-wlan-white.svg'
 import Battery from '../../assets/Iconset/iOS-battery-white.svg'
@@ -18,9 +18,9 @@ import HoTro from '../../assets/HomePage/Menu8.svg'
 import Sale1 from '../../assets/HomePage/sale1.svg'
 import Sale2 from '../../assets/HomePage/sale2.svg'
 import Sale3 from '../../assets/HomePage/sale3.svg'
-import Star from '../../assets/HomePage/Iconly/Bold/star.svg'
-import iconRight from '../../assets/HomePage/Iconly/Light/Arrow---Right-2.svg'
-import calendarTick from '../../assets/HomePage/vuesax/linear/calendar-tick.svg'
+import Star from '../../assets/Iconly/Bold/star.svg'
+import iconRight from '../../assets/Iconly/Light/Arrow---Right-2.svg'
+import calendarTick from '../../assets/vuesax/linear/calendar-tick.svg'
 import 'react-multi-carousel/lib/styles.css'
 import Carousel from 'react-multi-carousel'
 import SetviceImg1 from '../../assets/HomePage/serviceImg.svg'
@@ -50,6 +50,7 @@ interface FeaturedProduct {
   time: string
   distance: string
   evaluate: string
+  path: string
 }
 
 interface Category {
@@ -74,12 +75,12 @@ const HomePage = () => {
   }
   const responsiveSale = {
     superLarge: {
-      breakpoint: { max: 3000, min: 464 },
+      breakpoint: { max: 3000, min: 766 },
       items: 3.5,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 2.3,
+      breakpoint: { max: 767, min: 0 },
+      items: 2.2,
     },
   }
   const sliderMenuItems = [
@@ -172,6 +173,7 @@ const HomePage = () => {
       products: [
         {
           img: SetviceImg1,
+          path: '/cam-nam-lam-dep/chi-tiet',
           name: 'Chăm sóc da cơ bản 90 phút',
           price: '250.000₫',
           off: '30k',
@@ -182,6 +184,7 @@ const HomePage = () => {
         },
         {
           img: SetviceImg1,
+          path: '/cam-nam-lam-dep/chi-tiet',
           name: 'Chăm sóc da cơ bản 90 phút',
           price: '250.000₫',
           off: '30k',
@@ -192,6 +195,7 @@ const HomePage = () => {
         },
         {
           img: SetviceImg1,
+          path: '/cam-nam-lam-dep/chi-tiet',
           name: 'Chăm sóc da cơ bản 90 phút',
           price: '250.000₫',
           off: '30k',
@@ -202,6 +206,7 @@ const HomePage = () => {
         },
         {
           img: SetviceImg1,
+          path: '/cam-nam-lam-dep/chi-tiet',
           name: 'Chăm sóc da cơ bản 90 phút',
           price: '250.000₫',
           off: '30k',
@@ -212,6 +217,7 @@ const HomePage = () => {
         },
         {
           img: SetviceImg1,
+          path: '/cam-nam-lam-dep/chi-tiet',
           name: 'Chăm sóc da cơ bản 90 phút',
           price: '250.000₫',
           off: '30k',
@@ -239,33 +245,36 @@ const HomePage = () => {
         tabPanel.push(
           <div className="container" key={j}>
             <div className="featured-item">
-              <div className="row">
-                <div className="featured-item-pic">
-                  <img src={item.img} alt="" />
-                </div>
-                <div className="featured-item-text">
-                  <h6 className="Name">{item.name}</h6>
-                  <div className="price ">
-                    <div className="row">
-                      <div className="col-6 new">{item.price}</div>
-                      <div className="off">Giảm {item.off}</div>
+              <a href={item.path}>
+                <div className="row">
+                  <div className="featured-item-pic">
+                    <img src={item.img} alt="" />
+                  </div>
+                  <div className="featured-item-text">
+                    <h6 className="Name">{item.name}</h6>
+                    <div className="price ">
+                      <div className="row">
+                        <div className="col-6 new">{item.price}</div>
+                        <div className="off">Giảm {item.off}</div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="bookings">
-                    <img src={calendarTick} alt="" />
-                    <p>{item.bookings} lượt đặt</p>
-                  </div>
-                  <div className="info">
-                    <div className="row">
-                      <div className="col-4 start">{item.time} phút</div>
-                      <div className="col-4  center">{item.distance}Km</div>
-                      <div className="col-4 end">
-                        <img src={Star} alt="icon" /> {item.evaluate}
+                    <div className="bookings">
+                      <img src={calendarTick} alt="" />
+                      <p>{item.bookings} lượt đặt</p>
+                    </div>
+                    <div className="info">
+                      <div className="row">
+                        <div className="col-4 start">{item.time} phút</div>
+                        <div className="col-4  center">{item.distance}Km</div>
+                        <div className="col-4 end">
+                          <img src={Star} alt="icon" /> {item.evaluate}
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
+
               <div className="line"></div>
             </div>
           </div>,

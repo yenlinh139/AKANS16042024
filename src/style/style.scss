@@ -1328,7 +1328,23 @@
                 
             }
         }
-        
+        .container-Sale-slider {
+            .Sale-slider {
+                .Sale-slider-item {
+                    .price {
+                        padding-top: 8px;
+                        .new {
+                            color: $Price-M;
+                            font-size: 14px;
+                        }
+                        .old {
+                            font-size: 10px;
+                        }
+                    }
+                    
+                }
+            }
+        } 
         
         
     }

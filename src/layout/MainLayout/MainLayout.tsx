@@ -1,8 +1,8 @@
-import { memo, ReactNode } from "react";
-import Footer from "../Footer";
+import React, { memo, ReactNode } from 'react'
+const Footer = React.lazy(() => import('../Footer'))
 
 interface MainLayoutProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const MainLayout = ({ children, ...props }: MainLayoutProps) => {
@@ -11,7 +11,7 @@ const MainLayout = ({ children, ...props }: MainLayoutProps) => {
       {children}
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default memo(MainLayout);
+export default memo(MainLayout)

@@ -1,15 +1,17 @@
+import React, { Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import HomePage from './pages/HomePage'
-import MapPage from './pages/MapPage'
-import SalePage from './pages/SalePage'
-import VoucherPage from './pages/VoucherPage'
-import EarnCoinsPage from './pages/EarnCoinsPage'
-import BlogPage from './pages/BlogPage'
-import BlogDetailPage from './pages/BlogDetailPage'
-import MainLayout from './layout/MainLayout'
-import Booking from './pages/Booking'
-import ViewBooking from './pages/ViewBooking'
 import './style/style.scss'
+
+const HomePage = React.lazy(() => import('./pages/HomePage'))
+const MapPage = React.lazy(() => import('./pages/MapPage'))
+const SalePage = React.lazy(() => import('./pages/SalePage'))
+const VoucherPage = React.lazy(() => import('./pages/VoucherPage'))
+const EarnCoinsPage = React.lazy(() => import('./pages/EarnCoinsPage'))
+const BlogPage = React.lazy(() => import('./pages/BlogPage'))
+const BlogDetailPage = React.lazy(() => import('./pages/BlogDetailPage'))
+const MainLayout = React.lazy(() => import('./layout/MainLayout'))
+const Booking = React.lazy(() => import('./pages/Booking'))
+const ViewBooking = React.lazy(() => import('./pages/ViewBooking'))
 
 const renderUserRouter = () => {
   const userRouters = [
@@ -53,13 +55,15 @@ const renderUserRouter = () => {
   ]
 
   return (
-    <MainLayout>
-      <Routes>
-        {userRouters.map((item, key) => (
-          <Route key={key} path={item.path} element={item.element} />
-        ))}
-      </Routes>
-    </MainLayout>
+    <Suspense fallback="Đang tải trang, bạn đợi xíu nhé…">
+      <MainLayout>
+        <Routes>
+          {userRouters.map((item, key) => (
+            <Route key={key} path={item.path} element={item.element} />
+          ))}
+        </Routes>
+      </MainLayout>
+    </Suspense>
   )
 }
 

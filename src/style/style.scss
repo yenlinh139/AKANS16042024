@@ -190,13 +190,13 @@
                 align-items: stretch;
                 height: 50px;
         
-                img {
+                .icon {
                     position: absolute;
                     top: 15px;
                     left: 26px;
                     height: 20px;
                     align-items: center;
-                   
+                   color: #C1C1C1;
                 }
                 input {
                     padding-left: 55px;
@@ -501,7 +501,9 @@
                 font-size: 20px;
                 display: flex;
                 justify-content: center;
-                
+                .zaui-icon {
+                    font-size: 20px;
+                }
                 p {font-family: $font-medium; padding-left: 5px;}
             }
             &:hover {

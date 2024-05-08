@@ -22,11 +22,13 @@ import Star from '../../assets/Iconly/Bold/star.svg'
 import iconRight from '../../assets/Iconly/Light/Arrow---Right-2.svg'
 import calendarTick from '../../assets/vuesax/linear/calendar-tick.svg'
 import 'react-multi-carousel/lib/styles.css'
+import { Icon } from '../../components/Calendar'
 import Carousel from 'react-multi-carousel'
 import SetviceImg1 from '../../assets/HomePage/serviceImg.svg'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import { BiSolidHome, BiBell, BiCalendar, BiSolidUser } from 'react-icons/bi'
 import 'react-tabs/style/react-tabs.css'
+import '../../components/Calendar/zaui.css'
 import '../../style/style.scss'
 
 interface SliderSaleItem {
@@ -328,7 +330,7 @@ const HomePage = () => {
             <div className="row">
               <div className="col-10 col-xs-8">
                 <div className="searchHome">
-                  <img src={iconSearch} alt="icon" />
+                  <Icon icon="zi-search" size={22} className="icon" />
                   <input type="text" placeholder="Tìm kiếm..." />
                 </div>
               </div>
@@ -352,7 +354,7 @@ const HomePage = () => {
                 <div className="col-6">
                   <p className="p">Xin chào, Minh Anh</p>
                   <div className="iconlocation">
-                    <img src={iconLocation} alt="" />
+                    <Icon icon="zi-location-solid" size={20} />
                     <p>Q.Cầu giấy, TP.Hà Nội</p>
                   </div>
                 </div>
@@ -447,7 +449,9 @@ const HomePage = () => {
             <div className="col-3 ">
               <div className="icon-bottom">
                 <a href="/">
-                  <BiSolidHome className="icon" /> <p>Trang chủ</p>
+                  <Icon icon="zi-home" size={20} />
+                  <p>Trang chủ</p>
+                  <BiSolidHome className="icon" />
                 </a>
               </div>
             </div>
@@ -468,7 +472,8 @@ const HomePage = () => {
             <div className="col-3 ">
               <div className="icon-bottom">
                 <a href="#">
-                  <BiSolidUser className="icon" /> <p>User</p>
+                  <Icon icon="zi-user-solid" size={22} />
+                  <p>User</p>
                 </a>
               </div>
             </div>

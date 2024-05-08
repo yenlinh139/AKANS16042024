@@ -1,11 +1,9 @@
 import { memo } from 'react'
-import iconSearch from '../../assets/Iconly/Light/Search.svg'
 import iconChat from '../../assets/Iconly/Bold/Chat.svg'
 import iconShare from '../../assets/HomePage/ri_share-fill.svg'
 import iconWifi from '../../assets/Iconset/iOS-wlan-white.svg'
 import Battery from '../../assets/Iconset/iOS-battery-white.svg'
 import iconNetwork from '../../assets/Iconset/iOS-network-white.svg'
-import iconLocation from '../../assets/Iconly/Bold/Location.svg'
 import iconCoin from '../../assets/Iconset/coin.svg'
 import dichvu from '../../assets/HomePage/Menu1.svg'
 import chiNhanh from '../../assets/HomePage/Menu2.svg'
@@ -26,7 +24,7 @@ import { Icon } from '../../components/Calendar'
 import Carousel from 'react-multi-carousel'
 import SetviceImg1 from '../../assets/HomePage/serviceImg.svg'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
-import { BiSolidHome, BiBell, BiCalendar, BiSolidUser } from 'react-icons/bi'
+import { BiSolidHome, BiBell, BiCalendar } from 'react-icons/bi'
 import 'react-tabs/style/react-tabs.css'
 import '../../components/Calendar/zaui.css'
 import '../../style/style.scss'
@@ -449,9 +447,8 @@ const HomePage = () => {
             <div className="col-3 ">
               <div className="icon-bottom">
                 <a href="/">
-                  <Icon icon="zi-home" size={20} />
-                  <p>Trang chủ</p>
                   <BiSolidHome className="icon" />
+                  <p>Trang chủ</p>
                 </a>
               </div>
             </div>

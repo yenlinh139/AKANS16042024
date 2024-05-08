@@ -1,70 +1,70 @@
-import { memo } from "react";
-import iconWifi from "../../assets/Iconset/iOS-wlan-white.svg";
-import Battery from "../../assets/Iconset/iOS-battery-white.svg";
-import iconNetwork from "../../assets/Iconset/iOS-network-white.svg";
-import iconLeft from "../../assets/Arrow-Left.svg";
-import SetviceImg1 from "../../assets/HomePage/serviceImg.svg";
-import calendarTick from "../../assets/HomePage/vuesax/linear/calendar-tick.svg";
-import Star from "../../assets/HomePage/Iconly/Bold/star.svg";
+import { memo } from 'react'
+import iconWifi from '../../assets/Iconset/iOS-wlan-white.svg'
+import Battery from '../../assets/Iconset/iOS-battery-white.svg'
+import iconNetwork from '../../assets/Iconset/iOS-network-white.svg'
+import iconLeft from '../../assets/Arrow-Left.svg'
+import SetviceImg1 from '../../assets/HomePage/serviceImg.svg'
+import calendarTick from '../../assets/vuesax/linear/calendar-tick.svg'
+import Star from '../../assets/Iconly/Bold/star.svg'
 
 const SalePage = () => {
   const featProducts = [
     {
       img: SetviceImg1,
-      name: "Gội đầu massage...",
-      price: "250.000₫",
-      off: "30k",
-      bookings: "1200",
-      time: "20",
-      distance: "2.0",
-      evaluate: "4.5",
-      tagSale: "-27%",
+      name: 'Gội đầu massage...',
+      price: '250.000₫',
+      off: '30k',
+      bookings: '1200',
+      time: '20',
+      distance: '2.0',
+      evaluate: '4.5',
+      tagSale: '-27%',
     },
     {
       img: SetviceImg1,
-      name: "Gội đầu massage...",
-      price: "250.000₫",
-      off: "30k",
-      bookings: "1200",
-      time: "20",
-      distance: "2.0",
-      evaluate: "4.5",
-      tagSale: "-27%",
+      name: 'Gội đầu massage...',
+      price: '250.000₫',
+      off: '30k',
+      bookings: '1200',
+      time: '20',
+      distance: '2.0',
+      evaluate: '4.5',
+      tagSale: '-27%',
     },
     {
       img: SetviceImg1,
-      name: "Gội đầu massage...",
-      price: "250.000₫",
-      off: "30k",
-      bookings: "1200",
-      time: "20",
-      distance: "2.0",
-      evaluate: "4.5",
-      tagSale: "-27%",
+      name: 'Gội đầu massage...',
+      price: '250.000₫',
+      off: '30k',
+      bookings: '1200',
+      time: '20',
+      distance: '2.0',
+      evaluate: '4.5',
+      tagSale: '-27%',
     },
     {
       img: SetviceImg1,
-      name: "Gội đầu massage...",
-      price: "250.000₫",
-      off: "30k",
-      bookings: "1200",
-      time: "20",
-      distance: "2.0",
-      evaluate: "4.5",
-      tagSale: "-27%",
+      name: 'Gội đầu massage...',
+      price: '250.000₫',
+      off: '30k',
+      bookings: '1200',
+      time: '20',
+      distance: '2.0',
+      evaluate: '4.5',
+      tagSale: '-27%',
     },
     {
       img: SetviceImg1,
-      name: "Gội đầu massage...",
-      price: "250.000₫",
-      off: "30k",
-      bookings: "1200",
-      time: "20",
-      distance: "2.0",
-      evaluate: "4.5",
-      tagSale: "-27%",
+      name: 'Gội đầu massage...',
+      price: '250.000₫',
+      off: '30k',
+      bookings: '1200',
+      time: '20',
+      distance: '2.0',
+      evaluate: '4.5',
+      tagSale: '-27%',
     },
-  ];
+  ]
   return (
     <>
       <div id="SalePage">
@@ -148,6 +148,6 @@ const SalePage = () => {
         </div>
       </div>
     </>
-  );
-};
-export default memo(SalePage);
+  )
+}
+export default memo(SalePage)

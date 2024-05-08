@@ -7,7 +7,7 @@ import iconSearch from '../../assets/vuesax/linear/search-normal.svg'
 import Img1 from '../../assets/MapPage/image1.svg'
 import Img2 from '../../assets/MapPage/image2.svg'
 import iconMess from '../../assets/vuesax/linear/message.svg'
-import Star from '../../assets/HomePage/Iconly/Bold/star.svg'
+import Star from '../../assets/Iconly/Bold/star.svg'
 import { GoogleMap, LoadScript } from '@react-google-maps/api'
 
 const MapPage = () => {
